@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Haußknecht IT-Consulting</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Haußknecht IT-Consulting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>info@haussknkecht.com (Louis Haußknecht)</managingEditor>
+    <webMaster>info@haussknkecht.com (Louis Haußknecht)</webMaster>
+    <copyright>© 2024 Louis Haußknecht</copyright>
+    <lastBuildDate>Wed, 18 Dec 2024 17:27:47 +0100</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Über Uns</title>
+      <link>http://localhost:1313/posts/ueber-uns/</link>
+      <pubDate>Wed, 18 Dec 2024 17:27:47 +0100</pubDate>
+      <author>info@haussknkecht.com (Louis Haußknecht)</author>
+      <guid>http://localhost:1313/posts/ueber-uns/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
