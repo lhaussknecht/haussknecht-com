@@ -4,7 +4,7 @@ draft = false
 title = 'Individuelle Softwareentwicklung'
 +++
 {{< lead >}}
-Individuelle Softwareentwicklung – Maßgeschneidert für Ihren Erfolg
+Maßgeschneidert für Ihren Erfolg
 {{< /lead >}}
 Moderne Softwarelösungen sind das Herzstück effizienter Unternehmensprozesse. Mit unserer Expertise in der Entwicklung leistungsstarker Anwendungen bieten wir Ihnen maßgeschneiderte Lösungen, die genau auf Ihre Anforderungen abgestimmt sind.
 Backend-Entwicklung – Stabilität und Skalierbarkeit

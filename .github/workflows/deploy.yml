@@ -1,0 +1,29 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Trigger deploy webhook
+        run: |
+          curl -s -X POST \
+            -H "X-Hub-Signature: sha1=$(echo -n '' | openssl dgst -sha1 -hmac '${{ secrets.WEBHOOK_SECRET }}' | awk '{print $2}')" \
+            "${{ secrets.WEBHOOK_URL }}"

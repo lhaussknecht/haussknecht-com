@@ -1,0 +1,13 @@
+# Hugo build output
+public/
+resources/_gen/
+
+# Ghost export archive
+ghost-export/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Hugo lock file
+.hugo_build.lock
