@@ -23,7 +23,14 @@ jobs:
         run: hugo --minify
 
       - name: Trigger deploy webhook
+        env:
+          WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
         run: |
+          BODY='{"ref":"refs/heads/main"}'
+          SIG="sha1=$(echo -n "$BODY" | openssl dgst -sha1 -hmac "$WEBHOOK_SECRET" | awk '{print $2}')"
           curl -s -X POST \
-            -H "X-Hub-Signature: sha1=$(echo -n '' | openssl dgst -sha1 -hmac '${{ secrets.WEBHOOK_SECRET }}' | awk '{print $2}')" \
-            "${{ secrets.WEBHOOK_URL }}"
+            -H "Content-Type: application/json" \
+            -H "X-Hub-Signature: $SIG" \
+            -d "$BODY" \
+            "$WEBHOOK_URL"
