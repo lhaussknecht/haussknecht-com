@@ -2,7 +2,7 @@
 date = '2024-12-18T17:27:47+01:00'
 draft = false
 title = 'Willkommen bei Haußknecht IT-Consulting'
-description = 'ssds'
+description = 'Haußknecht IT-Consulting in Bonn – Ihr Partner für Softwareentwicklung, DevOps und IT-Beratung.'
 showTitle = false
 +++
 {{< lead >}}
