@@ -8,7 +8,7 @@ summary = 'Flutter-App auf Keyence BT-A600 Industrie-Handhelds für Wareneingang
 +++
 # Vom Handscanner zur modernen Flutter-App – Digitalisierung der Hallenprozesse in der Stahlverarbeitung
 
-Für einen mittelständischen Hersteller und Händler von Kaltband und Draht hat Haußknecht IT-Consulting eine mobile App entwickelt, mit der Mitarbeiter direkt in der Halle Wareneingang, Umlagerung und Warenausgang erfassen – auf robusten **Keyence BT-A600** Industrie-Handhelds mit integriertem Barcode-Scanner.
+Für einen mittelständischen Hersteller und Händler von Kaltband und Draht hat Haußknecht IT-Consulting eine mobile App entwickelt, mit der Mitarbeiter direkt in der Halle Wareneingang, Umlagerung und Warenausgang erfassen – auf robusten [**Keyence BT-A600**](https://www.keyence.de/products/mobile-computers/handheld-computers/bt-a600/) Industrie-Handhelds mit integriertem Barcode-Scanner.
 
 ## Ausgangslage
 
@@ -36,7 +36,7 @@ Bestände lassen sich per Scan umlagern, für den Versand kommissionieren und je
 
 ## Nahtlose Scanner-Integration
 
-Die Keyence-Handhelds liefern Scanergebnisse über das **Keyence ScanManager SDK** an die App. Über eine native Android-Anbindung landen die Scans ohne Umweg direkt im aktuellen Arbeitsschritt – kein Antippen von Eingabefeldern, kein Wechsel zwischen Apps. Die Integration ist herstellerunabhängig aufgebaut und unterstützt parallel auch Zebra-Geräte (DataWedge), sodass der Umstieg auf die neue Hardware schrittweise und ohne Stillstand erfolgen konnte.
+Die [Keyence BT-A600](https://www.keyence.de/products/mobile-computers/handheld-computers/bt-a600/) Handhelds – Android-Geräte mit 4,3-Zoll-Display, Quad-Kamera-Scanner und Pistolengriff-Option – liefern Scanergebnisse über das **Keyence ScanManager SDK** an die App. Über eine native Android-Anbindung landen die Scans ohne Umweg direkt im aktuellen Arbeitsschritt – kein Antippen von Eingabefeldern, kein Wechsel zwischen Apps. Die Integration ist herstellerunabhängig aufgebaut und unterstützt parallel auch Zebra-Geräte (DataWedge), sodass der Umstieg auf die neue Hardware schrittweise und ohne Stillstand erfolgen konnte.
 
 ## Integration in die bestehende Systemlandschaft
 
