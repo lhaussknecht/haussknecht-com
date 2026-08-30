@@ -2,6 +2,8 @@
 date = '2024-12-20T13:20:50+01:00'
 draft = false
 title = 'Individuelle Softwareentwicklung'
+weight = 10
+aliases = ['/portfolio/entwicklung/']
 +++
 {{< lead >}}
 Maßgeschneidert für Ihren Erfolg

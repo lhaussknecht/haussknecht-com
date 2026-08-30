@@ -1,7 +1,9 @@
 +++
 date = '2024-12-20T12:21:43+01:00'
 draft = false
-title = 'Devops'
+title = 'DevOps'
+weight = 20
+aliases = ['/portfolio/devops/']
 +++
 {{< lead >}}
 DevOps – Effizienz durch Automatisierung und Zusammenarbeit

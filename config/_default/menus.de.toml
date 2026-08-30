@@ -12,13 +12,13 @@
 
 
 [[main]]
-  name = "Portfolio"
-  pageRef = "portfolio"
+  name = "Leistungen"
+  pageRef = "leistungen"
   weight = 10
 
 [[main]]
-  name = "Blog"
-  pageRef = "posts"
+  name = "Referenzen"
+  pageRef = "referenzen"
   weight = 20
 
 #[[main]]

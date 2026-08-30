@@ -3,6 +3,7 @@ date = '2026-08-30T10:00:00+02:00'
 draft = false
 title = 'Mobile Wareneingangs-App mit Keyence-Scannern bei Kaltbandproduzent'
 tags = ['Success Story', 'Flutter', 'App-Entwicklung']
+aliases = ['/posts/keyence-scanner-app-kaltbandproduzent/']
 +++
 # Vom Handscanner zur modernen Flutter-App – Digitalisierung der Hallenprozesse in der Stahlverarbeitung
 

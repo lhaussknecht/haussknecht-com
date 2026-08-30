@@ -2,7 +2,8 @@
 date = '2018-12-18T17:27:47+01:00'
 draft = false
 title = 'Prozessoptimierung bei Kaltbandproduzent'
-tag = "Success Story"
+tags = ['Success Story']
+aliases = ['/posts/ueber-uns/']
 +++
 # Erfolgreiche Digitalisierung im Stahlbereich – Effizienzsteigerung durch automatisierte Wareneingangs-, Lager- und Maschinenplanung
 
