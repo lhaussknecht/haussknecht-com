@@ -4,6 +4,7 @@ draft = false
 title = 'Prozessoptimierung bei Kaltbandproduzent'
 tags = ['Success Story']
 aliases = ['/posts/ueber-uns/']
+summary = 'Digitalisierung von Wareneingang, Lagerverwaltung und Maschinenplanung in einem Stahlverarbeitungsbetrieb – mit Handscannern, Lasermesstechnik und automatischer Etikettierung.'
 +++
 # Erfolgreiche Digitalisierung im Stahlbereich – Effizienzsteigerung durch automatisierte Wareneingangs-, Lager- und Maschinenplanung
 

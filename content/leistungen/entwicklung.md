@@ -4,6 +4,7 @@ draft = false
 title = 'Individuelle Softwareentwicklung'
 weight = 10
 aliases = ['/portfolio/entwicklung/']
+summary = 'Robuste Backends mit C#, PostgreSQL und Messaging sowie plattformübergreifende Apps mit Flutter – maßgeschneidert für Ihre Geschäftsprozesse.'
 +++
 {{< lead >}}
 Maßgeschneidert für Ihren Erfolg

@@ -4,6 +4,7 @@ draft = false
 title = 'Mobile Wareneingangs-App mit Keyence-Scannern bei Kaltbandproduzent'
 tags = ['Success Story', 'Flutter', 'App-Entwicklung']
 aliases = ['/posts/keyence-scanner-app-kaltbandproduzent/']
+summary = 'Flutter-App auf Keyence BT-A600 Industrie-Handhelds für Wareneingang, Umlagerung und Warenausgang – mit Scanner-Integration, Fotodokumentation und Bluetooth-Etikettendruck.'
 +++
 # Vom Handscanner zur modernen Flutter-App – Digitalisierung der Hallenprozesse in der Stahlverarbeitung
 

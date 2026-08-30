@@ -4,6 +4,7 @@ draft = false
 title = 'DevOps'
 weight = 20
 aliases = ['/portfolio/devops/']
+summary = 'CI/CD mit GitHub und GitLab, Container-Orchestrierung mit Kubernetes und Infrastruktur als Code mit Terraform – für schnellere, zuverlässigere Releases.'
 +++
 {{< lead >}}
 DevOps – Effizienz durch Automatisierung und Zusammenarbeit

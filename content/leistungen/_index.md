@@ -6,6 +6,7 @@ aliases:
 groupByYear: false
 orderByWeight: true
 cascade:
+  showSummary: true
   showDate: false
   showAuthor: false
   showWordcount: false
