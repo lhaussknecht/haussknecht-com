@@ -122,6 +122,4 @@ Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSG
 
 ---
 
-*Hinweis: Diese Datenschutzerklärung dient als Grundgerüst. Es wird empfohlen, diese von einem spezialisierten Anwalt prüfen zu lassen, insbesondere wenn zusätzliche Dienste (z. B. Analytics, Kontaktformulare, Newsletter) eingebunden werden.*
-
 Quelle: Angelehnt an [e-recht24.de](https://www.e-recht24.de)
