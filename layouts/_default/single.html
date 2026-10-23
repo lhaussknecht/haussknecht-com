@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="page container">
+  <article class="prose">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ if eq .Section "referenzen" }}
+    <p class="meta">{{ .Date | time.Format "January 2006" }}</p>
+    {{ end }}
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}

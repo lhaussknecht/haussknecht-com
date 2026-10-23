@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="page container">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <div class="about-grid">
+    <figure class="portrait">
+      {{ with .Resources.GetMatch "louis-haussknecht.jpg" }}
+      {{ $img := .Fill "640x640 q85" }}
+      <img src="{{ $img.RelPermalink }}" width="320" height="320" alt="Porträt von Louis Haußknecht">
+      {{ end }}
+      <figcaption class="muted">Louis Haußknecht, Geschäftsführer</figcaption>
+    </figure>
+    <div class="prose">
+      {{ .Content }}
+    </div>
+  </div>
+
+  <div class="contact-box" id="kontakt">
+    <h2>Kontakt</h2>
+    <p>
+      Haußknecht IT-Consulting<br>
+      Hildegard-Wegscheider-Str. 1<br>
+      53125 Bonn
+    </p>
+    <p>
+      Telefon: <a href="tel:+4922824025115">+49 228 24025115</a><br>
+      E-Mail: <a href="mailto:info@haussknecht.com">info@haussknecht.com</a>
+    </p>
+    <p class="contact-actions"><a class="button" href="mailto:info@haussknecht.com">E-Mail schreiben</a></p>
+  </div>
+</div>
+{{ end }}
