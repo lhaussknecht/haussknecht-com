@@ -362,6 +362,45 @@ td {
 
 .button:hover { background: var(--petrol-soft); }
 
+/* ---- Über mich / Kontakt ---- */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-grid .portrait { max-width: 280px; }
+}
+
+.portrait { margin: 0; }
+
+.portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+}
+
+.contact-box {
+  background: var(--petrol-tint);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  margin-top: var(--space-12);
+  max-width: 720px;
+}
+
+.contact-box h2 { margin-top: 0; }
+
+.contact-box p { margin-bottom: var(--space-2); }
+
+.contact-actions { margin: var(--space-4) 0 0; }
+
 /* ---- Fußzeile ---- */
 
 .site-footer {
