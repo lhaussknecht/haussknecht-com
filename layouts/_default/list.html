@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="page container">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <div class="prose page-intro">
+    {{ .Content }}
+  </div>
+  <ul class="card-list">
+    {{ $pages := .RegularPages }}
+    {{ if .Params.orderByWeight }}{{ $pages = $pages.ByWeight }}{{ end }}
+    {{ range $pages }}
+    <li class="card">
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Summary }}</p>
+      <span class="more"><a href="{{ .RelPermalink }}">Mehr erfahren</a></span>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

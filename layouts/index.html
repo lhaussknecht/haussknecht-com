@@ -1,0 +1,42 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container">
+    <h1 class="display">IT-Beratung und Softwareentwicklung aus Bonn</h1>
+    <hr class="copper-rule">
+    {{ with .Content }}{{ $lead := findRE `<p class="lead">(?s:.*?)</p>` . 1 }}{{ with index $lead 0 }}{{ . | safeHTML }}{{ end }}{{ end }}
+  </div>
+</section>
+
+<div class="page container">
+  <div class="prose">
+    {{ replaceRE `<p class="lead">(?s:.*?)</p>` "" .Content | safeHTML }}
+  </div>
+
+  {{ with site.GetPage "leistungen" }}
+  <h2 class="section-title">{{ .Title }}</h2>
+  <ul class="card-list">
+    {{ range .RegularPages.ByWeight }}
+    <li class="card">
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Summary }}</p>
+      <span class="more"><a href="{{ .RelPermalink }}">Mehr erfahren</a></span>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
+  {{ with site.GetPage "referenzen" }}
+  <h2 class="section-title">{{ i18n "recent_projects" | default "Aktuelle Projekte" }}</h2>
+  <ul class="card-list">
+    {{ range first 4 .RegularPages }}
+    <li class="card">
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Summary }}</p>
+      <span class="more"><a href="{{ .RelPermalink }}">Zur Referenz</a></span>
+    </li>
+    {{ end }}
+  </ul>
+  <p style="margin-top: var(--space-6)"><a class="button" href="{{ .RelPermalink }}">Alle Referenzen</a></p>
+  {{ end }}
+</div>
+{{ end }}

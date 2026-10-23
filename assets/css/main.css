@@ -1,0 +1,399 @@
+/* Haußknecht IT-Consulting — Design-Token aus dem Design-System
+   (https://claude.ai/artifact/RzRnTDHpirdHDnqPii6zva, tokens.json v1).
+   Struktur über 1-px-Linien in hairline, keine Schatten, keine Verläufe. */
+
+:root {
+  --petrol: #0F4C5C;
+  --petrol-soft: #3E5F66;
+  --petrol-tint: #DCE8EA;
+  --copper: #B5652B;
+  --copper-text: #8F4C1E;
+  --surface-100: #F6F2EA;
+  --surface-200: #EDE7DB;
+  --surface-raised: #FFFFFF;
+  --ink: #1D1D1B;
+  --ink-muted: #55605F;
+  --on-brand: #FFFFFF;
+  --hairline: #D9D1C1;
+
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+  --mono: "IBM Plex Mono", Consolas, monospace;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-12: 48px;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --petrol: #2E7A8B;
+    --petrol-soft: #8FB5BD;
+    --petrol-tint: #1C3A41;
+    --copper: #D08A52;
+    --copper-text: #E0A06B;
+    --surface-100: #121A1C;
+    --surface-200: #1A2528;
+    --surface-raised: #213033;
+    --ink: #F1ECE3;
+    --ink-muted: #AEB6B4;
+    --hairline: #2E3B3E;
+    color-scheme: dark;
+  }
+}
+
+/* ---- Grundgerüst ---- */
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--surface-100);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+main { flex: 1 1 auto; }
+
+.prose { max-width: 720px; }
+
+/* ---- Typografie ---- */
+
+h1, h2, .display {
+  font-family: var(--serif);
+  font-weight: 500;
+  margin: 0 0 var(--space-4);
+}
+
+.display { font-size: 44px; line-height: 48px; }
+h1 { font-size: 32px; line-height: 38px; margin-top: 0; }
+h2 { font-size: 24px; line-height: 30px; margin-top: var(--space-12); }
+
+h3, h4, h5, h6 {
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: var(--space-6) 0 var(--space-2);
+}
+
+p, ul, ol { margin: 0 0 var(--space-4); }
+
+li { margin-bottom: var(--space-1); }
+
+small, .small, figcaption {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.label {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.muted { color: var(--ink-muted); }
+
+.lead {
+  font-size: 17px;
+  line-height: 26px;
+  color: var(--petrol-soft);
+  margin-bottom: var(--space-6);
+}
+
+a {
+  color: var(--copper-text);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover { text-decoration-thickness: 2px; }
+
+code, pre {
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+code {
+  background: var(--surface-200);
+  padding: 1px var(--space-1);
+  border-radius: var(--radius-sm);
+}
+
+pre {
+  background: var(--surface-200);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  overflow-x: auto;
+}
+
+pre code { background: none; padding: 0; }
+
+blockquote {
+  margin: var(--space-6) 0;
+  padding: var(--space-4);
+  background: var(--petrol-tint);
+  border-radius: var(--radius-md);
+}
+
+blockquote > :last-child { margin-bottom: 0; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--hairline);
+  margin: var(--space-6) 0;
+}
+
+img { max-width: 100%; height: auto; }
+
+figure { margin: var(--space-6) 0; }
+
+figcaption { color: var(--ink-muted); margin-top: var(--space-2); }
+
+/* ---- Tabellen ---- */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: var(--space-6) 0;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+th {
+  background: var(--petrol);
+  color: var(--on-brand);
+  font-family: var(--sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  text-align: left;
+  padding: var(--space-2);
+}
+
+td {
+  padding: var(--space-2);
+  border-bottom: 1px solid var(--hairline);
+  background: var(--surface-raised);
+}
+
+/* ---- Kopfbalken ---- */
+
+.site-header {
+  background: var(--petrol);
+  color: var(--on-brand);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  color: var(--on-brand);
+  text-decoration: none;
+}
+
+.site-brand img { height: 64px; width: auto; display: block; }
+
+.site-brand .name {
+  font-family: var(--serif);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.site-nav {
+  margin-left: auto;
+  display: flex;
+  gap: var(--space-6);
+}
+
+.site-nav a {
+  color: var(--on-brand);
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 24px;
+  padding: var(--space-1) 0;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover, .site-nav a[aria-current="true"] {
+  border-bottom-color: var(--copper);
+}
+
+@media (max-width: 640px) {
+  .site-brand img { display: none; } /* unter 64 px nur der Schriftzug */
+  .site-brand .name { font-size: 20px; }
+  .site-header .container { flex-wrap: wrap; }
+  .site-nav { margin-left: 0; gap: var(--space-4); }
+}
+
+/* ---- Hero (Titelfläche) ---- */
+
+.hero {
+  background: var(--petrol);
+  color: var(--on-brand);
+  padding: var(--space-12) 0;
+}
+
+.hero h1, .hero .display { color: var(--on-brand); margin-bottom: var(--space-2); }
+
+.hero .copper-rule {
+  width: 72px;
+  height: 3px;
+  background: var(--copper);
+  border: 0;
+  margin: var(--space-4) 0 0;
+}
+
+.hero p {
+  margin: var(--space-4) 0 0;
+  max-width: 640px;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.hero .lead { color: var(--on-brand); margin-bottom: 0; }
+
+@media (max-width: 640px) {
+  .hero { padding: var(--space-6) 0; }
+  .display { font-size: 32px; line-height: 38px; }
+}
+
+/* ---- Inhalt ---- */
+
+.page { padding: var(--space-12) 0; }
+
+.page-title { margin-bottom: var(--space-2); }
+
+.page-intro { max-width: 720px; }
+
+.section-title {
+  margin-top: var(--space-12);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--hairline);
+}
+
+/* ---- Karten (Listen) ---- */
+
+.card-list {
+  list-style: none;
+  margin: var(--space-6) 0 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: var(--surface-raised);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.card h3 { margin: 0; }
+
+.card h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.card h3 a:hover { color: var(--copper-text); }
+
+.card p { margin: 0; color: var(--ink-muted); }
+
+.card .more {
+  margin-top: auto;
+  padding-top: var(--space-2);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* ---- Schaltflächen ---- */
+
+.button {
+  display: inline-block;
+  background: var(--petrol);
+  color: var(--on-brand);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+}
+
+.button:hover { background: var(--petrol-soft); }
+
+/* ---- Fußzeile ---- */
+
+.site-footer {
+  margin-top: var(--space-12);
+  border-top: 1px solid var(--hairline);
+  background: var(--surface-200);
+  color: var(--ink-muted);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.site-footer .container {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-6);
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.site-footer nav { display: flex; gap: var(--space-4); }
+
+.site-footer a { color: var(--ink-muted); }
+
+.site-footer a:hover { color: var(--copper-text); }
+
+/* ---- Artikel-Metadaten ---- */
+
+.meta {
+  color: var(--ink-muted);
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: var(--space-6);
+}
